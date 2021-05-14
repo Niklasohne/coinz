@@ -9,6 +9,8 @@ after an 2-year break of actively programming Java plugins to get back into it.
 
 But I still want to work on this in the future
 
+release 
+
 ## Content
 there are 2 main parts to this Plugin : Economy management and Shop
 
@@ -46,7 +48,10 @@ you have a set of Items each individual Merchants sells
 ## Setup
 to use this plugin you need an MongoDB database to store Player-information etc.
 
-take the compiled jar [link will follow]() and drag it into the Plugin folder
+Also, you need the [ProtocolLib](https://github.com/dmulloy2/ProtocolLib/) Plugin installed
+
+
+download the newest release and drag it into the Plugin folder
 
 insert your Database connection string into the config file
 
