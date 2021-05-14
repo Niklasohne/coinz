@@ -1,0 +1,45 @@
+name: SimpleCoinz
+version: ${project.version}
+main: de.ronon_lul.simplecoinz.SimpleCoinz
+api-version: 1.16
+description: This plugin provides a simple economy system
+author: ronon_lul
+depend: [ ProtocolLib ]
+prefix: SimpleTest
+
+commands:
+  spawn_npc:
+    description: spawns a new NPC. needs the type as input
+    permission: SimpleCoinz.admin
+    usage: "Usage: /spawn_npc [ BLOCKMERCHANT | BLACKSMITH | BANK] "
+  showBank:
+    description: Debug Command to opens the Bank interface from anywhere
+    permission: SimpleCoinz.admin
+    usage: "Usage: /showBank"
+  spend:
+    description: Debug Command to Spend a specific amount of the Cash from the wallet
+    permission: SimpleCoinz.admin
+    usage: "Usage: /spend <amount>"
+  receive:
+    description: Debug Command to receive a specific amount of the Cash in the wallet
+    permission: SimpleCoinz.admin
+    usage: "Usage: /receive <amount>"
+  cashIN:
+    description: Debug Command to CashIn a specific amount of the Cash to the Bank
+    permission: SimpleCoinz.admin
+    usage: "Usage: /cashin <amount>"
+  cashOut:
+    description: Debug Command to CashOut a specific amount of the Cash to the wallet
+    permission: SimpleCoinz.admin
+    usage: "Usage: /cashout <amount>"
+  transfer:
+    description: Debug Command to send a specific amount of money to another players bank account
+    permission: SimpleCoinz.admin
+    usage: "Usage: /send <playerName> <amount>"
+
+
+permissions:
+  SimpleCoinz.user:
+    default: true
+  SimpleCoinz.admin:
+    default: op
